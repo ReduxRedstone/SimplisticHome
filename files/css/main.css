@@ -1,0 +1,127 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+
+* {
+    font-family: "Montserrat";
+}
+#left {
+    border-right: 20px solid black;
+    float: left;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: #FF5555;
+    width: 50%;
+    height: 100%;
+    z-index: 1;
+}
+#right {
+    border-left: 20px solid black;
+    float: right;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-color: #FF5555;
+    width: 50%;
+    height: 100%;
+    z-index: 2;
+}
+#right_img {
+    float: right;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background: url("../images/placeholder1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+}
+#open_button {
+    position: absolute;
+    bottom: 45%;
+    left: 43%;
+    padding: 1%;
+    z-index: 3;
+}
+a:hover {
+    transition: all 200ms ease-in-out;
+    text-indent: 10%;
+}
+a {
+    font-size: 50px;
+    transition: all 200ms ease-in-out;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+.floating {
+    -webkit-animation-name: Floatingx;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floating;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes Floatingx {
+    from {-webkit-transform:translate(0, 0px);}
+    65% {-webkit-transform:translate(0, 15px);}
+    to {-webkit-transform: translate(0, -0px);}    
+}
+    
+@-moz-keyframes Floating {
+    from {-moz-transform:translate(0, 0px);}
+    65% {-moz-transform:translate(0, 15px);}
+    to {-moz-transform: translate(0, -0px);}    
+}
+
+::-webkit-scrollbar {width: 0;}
+::-webkit-scrollbar-track {border-radius: 0;}
+::-webkit-scrollbar-thumb {border-radius: 0;}
+
+#sidenav {
+  width: 25%;
+  height: auto;
+  position: relative;
+  transition: left 0.3s;
+  overflow-y: auto;
+}
+#sidenav a:hover {
+  transition: all 200ms ease-in-out;
+  text-decoration: none;
+  text-indent: 5px;
+  color: black;
+}
+#sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  padding: 0 20px;
+}
+#sidenav ul li.placeholder {
+  height: 12px;
+  border-bottom: 5px solid rgb(0,0,0);
+  margin-bottom: 12px;
+}
+#sidenav ul li.slant {
+  height: 12px;
+  border-bottom: 10px solid rgb(0,0,0);
+  margin-bottom: 12px;
+  border-top: 0 solid white;
+  border-right: 20px solid white;
+}
+#sidenav ul li a {
+  display: table-cell;
+  height: 38px;
+  color: black;
+  vertical-align: middle;
+}
+#sidenav ul li a i {
+  font-size: 24px;
+  margin-right: 8px;
+}
+h1 {
+    font-size: 100px;
+}
